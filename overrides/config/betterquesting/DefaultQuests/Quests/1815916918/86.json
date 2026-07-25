@@ -6,7 +6,8 @@
         "Count:3": 1,
         "id:8": "projecte:item.pe_covalence_dust"
       },
-      "name:8": "Covalence Dusts"
+      "name:8": "Covalence Dusts",
+      "tasklogic:8": "OR"
     }
   },
   "questID:3": 86,
@@ -30,7 +31,7 @@
     },
     "1:10": {
       "index:3": 1,
-      "optional:1": 1,
+      "optional:1": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,

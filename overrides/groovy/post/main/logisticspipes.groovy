@@ -360,7 +360,7 @@ mods.minecraft.crafting.shapelessBuilder()
     .input([item('logisticspipes:module_terminus')])
     .register()
 
-// Provider Module (two variants + self-reuse)
+// Provider Module MK1 (two variants + self-reuse)
 mods.minecraft.crafting.removeByOutput(item('logisticspipes:module_provider'))
 mods.minecraft.crafting.shapedBuilder()
     .output(item('logisticspipes:module_provider'))
@@ -383,6 +383,50 @@ mods.minecraft.crafting.shapedBuilder()
 mods.minecraft.crafting.shapelessBuilder()
     .output(item('logisticspipes:module_provider'))
     .input([item('logisticspipes:module_provider')])
+    .register()
+
+// Provider Module MK2 (two variants + upgrade from MK1 + self-reuse)
+mods.minecraft.crafting.removeByOutput(item('logisticspipes:module_provider_mk2'))
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_provider_mk2'))
+    .shape([
+        [item('minecraft:dye', 4), item('buildcraftsilicon:redstone_chipset', 2), item('minecraft:dye', 4)],
+        [item('minecraft:redstone'), item('logisticspipes:module_blank'), item('minecraft:redstone')],
+        [item('minecraft:dye', 4), item('minecraft:redstone'), item('minecraft:dye', 4)]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_provider_mk2'))
+    .shape([
+        [item('minecraft:dye', 4), item('buildcraftcore:gear_gold'), item('minecraft:dye', 4)],
+        [item('minecraft:redstone'), item('logisticspipes:module_blank'), item('minecraft:redstone')],
+        [item('minecraft:dye', 4), item('minecraft:redstone'), item('minecraft:dye', 4)]
+    ])
+    .register()
+
+// Provider Module MK1 -> MK2 Upgrade (two variants)
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_provider_mk2'))
+    .shape([
+        [item('buildcraftsilicon:redstone_chipset', 4), null, null],
+        [item('logisticspipes:module_provider'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_provider_mk2'))
+    .shape([
+        [item('buildcraftcore:gear_diamond'), null, null],
+        [item('logisticspipes:module_provider'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapelessBuilder()
+    .output(item('logisticspipes:module_provider_mk2'))
+    .input([item('logisticspipes:module_provider_mk2')])
     .register()
 
 // Enchantment Sink Module MK1 (one variant + self-reuse)
@@ -426,7 +470,7 @@ mods.minecraft.crafting.shapelessBuilder()
     .input([item('logisticspipes:module_enchantment_sink_mk2')])
     .register()
 
-// Crafting Module (two variants + self-reuse)
+// Crafting Module MK1 (two variants + self-reuse)
 mods.minecraft.crafting.removeByOutput(item('logisticspipes:module_crafter'))
 mods.minecraft.crafting.shapedBuilder()
     .output(item('logisticspipes:module_crafter'))
@@ -449,6 +493,94 @@ mods.minecraft.crafting.shapedBuilder()
 mods.minecraft.crafting.shapelessBuilder()
     .output(item('logisticspipes:module_crafter'))
     .input([item('logisticspipes:module_crafter')])
+    .register()
+
+// Crafting Module MK2 (two variants + upgrade from MK1 + self-reuse)
+mods.minecraft.crafting.removeByOutput(item('logisticspipes:module_crafter_mk2'))
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_crafter_mk2'))
+    .shape([
+        [item('minecraft:dye', 1), item('buildcraftsilicon:redstone_chipset', 2), item('minecraft:dye', 4)],
+        [item('minecraft:redstone'), item('logisticspipes:module_blank'), item('minecraft:redstone')],
+        [item('minecraft:dye', 4), item('minecraft:redstone'), item('minecraft:dye', 1)]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_crafter_mk2'))
+    .shape([
+        [item('minecraft:dye', 1), item('buildcraftcore:gear_gold'), item('minecraft:dye', 4)],
+        [item('minecraft:redstone'), item('logisticspipes:module_blank'), item('minecraft:redstone')],
+        [item('minecraft:dye', 4), item('minecraft:redstone'), item('minecraft:dye', 1)]
+    ])
+    .register()
+
+// Crafting Module MK1 -> MK2 Upgrade (two variants)
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_crafter_mk2'))
+    .shape([
+        [item('buildcraftsilicon:redstone_chipset', 2), null, null],
+        [item('logisticspipes:module_crafter'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_crafter_mk2'))
+    .shape([
+        [item('buildcraftcore:gear_gold'), null, null],
+        [item('logisticspipes:module_crafter'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapelessBuilder()
+    .output(item('logisticspipes:module_crafter_mk2'))
+    .input([item('logisticspipes:module_crafter_mk2')])
+    .register()
+
+// Crafting Module MK3 (two variants + upgrade from MK2 + self-reuse)
+mods.minecraft.crafting.removeByOutput(item('logisticspipes:module_crafter_mk3'))
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_crafter_mk3'))
+    .shape([
+        [item('minecraft:dye', 1), item('buildcraftsilicon:redstone_chipset', 4), item('minecraft:dye', 4)],
+        [item('minecraft:redstone'), item('logisticspipes:module_blank'), item('minecraft:redstone')],
+        [item('minecraft:dye', 4), item('minecraft:redstone'), item('minecraft:dye', 1)]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_crafter_mk3'))
+    .shape([
+        [item('minecraft:dye', 1), item('buildcraftcore:gear_diamond'), item('minecraft:dye', 4)],
+        [item('minecraft:redstone'), item('logisticspipes:module_blank'), item('minecraft:redstone')],
+        [item('minecraft:dye', 4), item('minecraft:redstone'), item('minecraft:dye', 1)]
+    ])
+    .register()
+
+// Crafting Module MK2 -> MK3 Upgrade (two variants)
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_crafter_mk3'))
+    .shape([
+        [item('buildcraftsilicon:redstone_chipset', 4), null, null],
+        [item('logisticspipes:module_crafter_mk2'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:module_crafter_mk3'))
+    .shape([
+        [item('buildcraftcore:gear_diamond'), null, null],
+        [item('logisticspipes:module_crafter_mk2'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapelessBuilder()
+    .output(item('logisticspipes:module_crafter_mk3'))
+    .input([item('logisticspipes:module_crafter_mk3')])
     .register()
 
 // ── Upgrade Recipes ───────────────────────────────────────────────────────────
@@ -756,7 +888,10 @@ mods.minecraft.crafting.removeByOutput(item('logisticspipes:pipe_basic'))
 def advancedPipes = [
     item('logisticspipes:pipe_request'),
     item('logisticspipes:pipe_provider'),
+    item('logisticspipes:pipe_provider_mk2'),
     item('logisticspipes:pipe_crafting'),
+    item('logisticspipes:pipe_crafting_mk2'),
+    item('logisticspipes:pipe_crafting_mk3'),
     item('logisticspipes:pipe_satellite'),
     item('logisticspipes:pipe_supplier'),
     item('logisticspipes:pipe_chassis_mk1'),
@@ -845,7 +980,7 @@ mods.minecraft.crafting.shapedBuilder()
     ])
     .register()
 
-// Provider Logistics Pipe
+// Provider Logistics Pipe MK1
 mods.minecraft.crafting.shapedBuilder()
     .output(item('logisticspipes:pipe_provider'))
     .shape([
@@ -856,7 +991,27 @@ mods.minecraft.crafting.shapedBuilder()
     .replace()
     .register()
 
-// Crafting Logistics Pipe
+// Provider Logistics Pipe MK1 -> MK2 Upgrade (two variants)
+mods.minecraft.crafting.removeByOutput(item('logisticspipes:pipe_provider_mk2'))
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:pipe_provider_mk2'))
+    .shape([
+        [item('buildcraftsilicon:redstone_chipset', 4), null, null],
+        [item('logisticspipes:pipe_provider'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:pipe_provider_mk2'))
+    .shape([
+        [item('buildcraftcore:gear_diamond'), null, null],
+        [item('logisticspipes:pipe_provider'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+// Crafting Logistics Pipe MK1
 mods.minecraft.crafting.shapedBuilder()
     .output(item('logisticspipes:pipe_crafting'))
     .shape([
@@ -865,6 +1020,66 @@ mods.minecraft.crafting.shapedBuilder()
         [null, null, null]
     ])
     .replace()
+    .register()
+
+// Crafting Logistics Pipe MK2
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:pipe_crafting_mk2'))
+    .shape([
+        [item('minecraft:glowstone_dust'), item('logisticspipes:pipe_basic'), item('minecraft:glowstone_dust')],
+        [null, null, null],
+        [null, null, null]
+    ])
+    .replace()
+    .register()
+
+// Crafting Logistics Pipe MK1 -> MK2 Upgrade (two variants)
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:pipe_crafting_mk2'))
+    .shape([
+        [item('buildcraftsilicon:redstone_chipset', 2), null, null],
+        [item('logisticspipes:pipe_crafting'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:pipe_crafting_mk2'))
+    .shape([
+        [item('buildcraftcore:gear_gold'), null, null],
+        [item('logisticspipes:pipe_crafting'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+// Crafting Logistics Pipe MK3
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:pipe_crafting_mk3'))
+    .shape([
+        [item('minecraft:glowstone_dust'), item('logisticspipes:pipe_basic'), item('minecraft:glowstone_dust')],
+        [null, null, null],
+        [null, null, null]
+    ])
+    .replace()
+    .register()
+
+// Crafting Logistics Pipe MK2 -> MK3 Upgrade (two variants)
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:pipe_crafting_mk3'))
+    .shape([
+        [item('buildcraftsilicon:redstone_chipset', 4), null, null],
+        [item('logisticspipes:pipe_crafting_mk2'), null, null],
+        [null, null, null]
+    ])
+    .register()
+
+mods.minecraft.crafting.shapedBuilder()
+    .output(item('logisticspipes:pipe_crafting_mk3'))
+    .shape([
+        [item('buildcraftcore:gear_diamond'), null, null],
+        [item('logisticspipes:pipe_crafting_mk2'), null, null],
+        [null, null, null]
+    ])
     .register()
 
 // Satellite Logistics Pipe

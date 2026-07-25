@@ -6,7 +6,8 @@
         "Count:3": 1,
         "id:8": "logisticspipes:hud_glasses"
       },
-      "name:8": "Logistics HUD Glasses"
+      "name:8": "Logistics HUD Glasses",
+      "tasklogic:8": "OR"
     }
   },
   "questID:3": 195,
@@ -17,7 +18,7 @@
     },
     "1:10": {
       "index:3": 1,
-      "optional:1": 1,
+      "optional:1": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,

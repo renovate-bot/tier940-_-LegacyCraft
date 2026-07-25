@@ -6,7 +6,8 @@
         "Count:3": 1,
         "id:8": "emcbuilderswand:wandemc"
       },
-      "name:8": "EMC Wand"
+      "name:8": "EMC Wand",
+      "tasklogic:8": "OR"
     }
   },
   "questID:3": 484294550,
@@ -18,7 +19,7 @@
     "1:10": {
       "ignoreNBT:1": 1,
       "index:3": 1,
-      "optional:1": 1,
+      "optional:1": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,

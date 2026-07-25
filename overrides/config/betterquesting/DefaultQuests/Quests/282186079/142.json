@@ -10,7 +10,8 @@
         "Damage:2": 1,
         "id:8": "enderstorage:ender_storage"
       },
-      "name:8": "Ender Tank"
+      "name:8": "Ender Tank",
+      "tasklogic:8": "OR"
     }
   },
   "questID:3": 142,
@@ -21,7 +22,7 @@
     },
     "1:10": {
       "index:3": 1,
-      "optional:1": 1,
+      "optional:1": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,

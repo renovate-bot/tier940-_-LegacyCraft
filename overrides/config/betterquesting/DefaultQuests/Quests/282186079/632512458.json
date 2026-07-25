@@ -6,7 +6,8 @@
         "Count:3": 1,
         "id:8": "minecraft:nether_star"
       },
-      "name:8": "Tank Upgrade"
+      "name:8": "Tank Upgrade",
+      "tasklogic:8": "OR"
     }
   },
   "questID:3": 632512458,
@@ -18,7 +19,7 @@
     "1:10": {
       "entryLogic:8": "OR",
       "index:3": 1,
-      "optional:1": 1,
+      "optional:1": 0,
       "requiredItems:9": {
         "0:10": {
           "Count:3": 1,
