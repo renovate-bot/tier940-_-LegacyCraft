@@ -1023,15 +1023,7 @@ mods.minecraft.crafting.shapedBuilder()
     .register()
 
 // Crafting Logistics Pipe MK2
-mods.minecraft.crafting.shapedBuilder()
-    .output(item('logisticspipes:pipe_crafting_mk2'))
-    .shape([
-        [item('minecraft:glowstone_dust'), item('logisticspipes:pipe_basic'), item('minecraft:glowstone_dust')],
-        [null, null, null],
-        [null, null, null]
-    ])
-    .replace()
-    .register()
+mods.minecraft.crafting.removeByOutput(item('logisticspipes:pipe_crafting_mk2'))
 
 // Crafting Logistics Pipe MK1 -> MK2 Upgrade (two variants)
 mods.minecraft.crafting.shapedBuilder()
@@ -1053,15 +1045,7 @@ mods.minecraft.crafting.shapedBuilder()
     .register()
 
 // Crafting Logistics Pipe MK3
-mods.minecraft.crafting.shapedBuilder()
-    .output(item('logisticspipes:pipe_crafting_mk3'))
-    .shape([
-        [item('minecraft:glowstone_dust'), item('logisticspipes:pipe_basic'), item('minecraft:glowstone_dust')],
-        [null, null, null],
-        [null, null, null]
-    ])
-    .replace()
-    .register()
+mods.minecraft.crafting.removeByOutput(item('logisticspipes:pipe_crafting_mk3'))
 
 // Crafting Logistics Pipe MK2 -> MK3 Upgrade (two variants)
 mods.minecraft.crafting.shapedBuilder()
