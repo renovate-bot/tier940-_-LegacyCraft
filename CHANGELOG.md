@@ -1,3 +1,14 @@
+# 2.6.2
+# New mods
+- Better Link Party Claim (0.15.2)
+
+# Update mods
+- JourneyMap (5.7.1p3 -> 6.0.0-beta.2)
+- LegacyCraft Core (1.2.5 -> 1.3.0)
+- StellarCore (1.5.22 -> 1.6.0)
+
+* * *
+
 # 2.6.1
 # New mods
 - StorageBox (1.0.1)
