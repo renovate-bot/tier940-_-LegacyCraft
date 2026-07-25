@@ -7,6 +7,14 @@
 - LegacyCraft Core (1.2.5 -> 1.3.0)
 - StellarCore (1.5.22 -> 1.6.0)
 
+# New Items
+- Provider Module MK2
+- Crafting Module MK2
+- Crafting Module MK3
+- Provider Logistics Pipe MK2
+- Crafting Logistics Pipe MK2
+- Crafting Logistics Pipe MK3
+
 * * *
 
 # 2.6.1
