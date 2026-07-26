@@ -390,7 +390,7 @@ mods.minecraft.crafting.removeByOutput(item('logisticspipes:module_provider_mk2'
 mods.minecraft.crafting.shapedBuilder()
     .output(item('logisticspipes:module_provider_mk2'))
     .shape([
-        [item('minecraft:dye', 4), item('buildcraftsilicon:redstone_chipset', 2), item('minecraft:dye', 4)],
+        [item('minecraft:dye', 4), item('buildcraftsilicon:redstone_chipset', 4), item('minecraft:dye', 4)],
         [item('minecraft:redstone'), item('logisticspipes:module_blank'), item('minecraft:redstone')],
         [item('minecraft:dye', 4), item('minecraft:redstone'), item('minecraft:dye', 4)]
     ])
@@ -399,7 +399,7 @@ mods.minecraft.crafting.shapedBuilder()
 mods.minecraft.crafting.shapedBuilder()
     .output(item('logisticspipes:module_provider_mk2'))
     .shape([
-        [item('minecraft:dye', 4), item('buildcraftcore:gear_gold'), item('minecraft:dye', 4)],
+        [item('minecraft:dye', 4), item('buildcraftcore:gear_diamond'), item('minecraft:dye', 4)],
         [item('minecraft:redstone'), item('logisticspipes:module_blank'), item('minecraft:redstone')],
         [item('minecraft:dye', 4), item('minecraft:redstone'), item('minecraft:dye', 4)]
     ])
