@@ -14,7 +14,7 @@
   "add": [
     { // Fugue
       "projectID": 1005815,
-      "fileID": 8230893,
+      "fileID": 8629748,
       "required": true
     },
     { // Scalar Legacy
@@ -30,7 +30,7 @@
       "projectID": 242818,
       "with": {
         "projectID": 1328922,
-        "fileID": 6898525
+        "fileID": 8553938
       }
     },
     { // Advanced Backups Patch -> Advanced Backups Patch LWJGL3 version

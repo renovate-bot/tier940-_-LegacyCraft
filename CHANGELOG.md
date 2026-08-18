@@ -1,3 +1,18 @@
+# 2.6.3
+## Update mods
+- Had Enough Items (4.29.12 -> 4.34.3)
+- JourneyMap (6.0.0-beta.2 -> 6.0.4)
+- LegacyCraft Core (1.3.0 -> 1.3.2)
+- The One Probe Community Edition (1.3.6 -> 1.3.9-fix1)
+- TopAllDependents (1.4 -> 1.5)
+- Universal Tweaks (1.17.0 -> 1.20.1)
+
+## Fix Recipe
+### LogisticsPipes
+- Provider Module MK2
+
+* * *
+
 # 2.6.2
 # New mods
 - Better Link Party Claim (0.15.2)
